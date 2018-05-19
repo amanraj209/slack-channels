@@ -7,7 +7,7 @@ class UserList extends Component {
         return (
             <div className='list-group list-group-flush'>
                 {this.props.users.map(user => {
-                    return <User user={user} key={user.id} {...this.props} />
+                    return <User user={user} key={user.id} />
                 })}
             </div>
         )
@@ -15,9 +15,7 @@ class UserList extends Component {
 }
 
 UserList.propTypes = {
-    users: PropTypes.array.isRequired,
-    setUser: PropTypes.func.isRequired,
-    activeUser: PropTypes.object.isRequired
+    users: PropTypes.array.isRequired
 }
 
 export default UserList;

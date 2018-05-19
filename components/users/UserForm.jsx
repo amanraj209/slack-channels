@@ -14,7 +14,7 @@ class UserForm extends Component {
         return (
             <form onSubmit={this.onSubmit.bind(this)}>
                 <div className='form-group'>
-                    <input className='form-control' type='text' ref='user' placeholder='Add User'/>
+                    <input className='form-control' type='text' ref='user' placeholder='Edit User'/>
                 </div>
             </form>
         )
